@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#post1">Post 1</a></li>
+                <li><a href="#post2">Post 2</a></li>
+                <li><a href="#post3">Post 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="post1" class="blog-post">
+            <h2>Title of Post 1</h2>
+            <p>Date: January 1, 2023</p>
+            <img src="wall_1.avif" alt="Post 1 Image">
+            <p>Content of the first blog post...</p>
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <form id="commentForm1" onsubmit="return addComment(event, 1)">
+                    <input type="text" id="name1" placeholder="Your Name" required>
+                    <textarea id="message1" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="comments1"></div>
+            </div>
+        </section>
+        <!-- Repeat for Post 2 and Post 3 -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
